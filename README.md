@@ -3,6 +3,8 @@ scrapy website Article and link ...
 
 e.g.
 
+`scrapy crawl SeebugSpider -o seebug.csv`
+
 ```
 {
 	'Article_Author': '译者：知道创宇404实验室翻译组',

@@ -3,6 +3,30 @@ scrapy website Article and link ...
 
 e.g.
 
+`pip3 install lxml,scrapy`
+
+```
+文章标题 Article_Title
+//*[@id="wrapper"]/main/div/article/header/h5/a/text()
+
+//*[@id="wrapper"]/main/div/article/header/h5/a
+
+文件链接 Article_Link
+//*[@id="wrapper"]/main/div/article/header/h5/a/@href
+
+文章时间 Article_Time
+//*[@id="wrapper"]/main/div/article/header/section/span/time[1]
+
+文章标签 Article_Tag
+//*[@id="wrapper"]/main/div/article/header/section/a
+
+文章简介 Article_Introduction
+//*[@id="wrapper"]/main/div/article/section/text()
+
+下一页
+//*[@id="wrapper"]/main/div/nav/a[@class="older-posts"]/@href[2]
+```
+
 `scrapy crawl SeebugSpider -o seebug.csv`
 
 ```

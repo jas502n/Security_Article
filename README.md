@@ -76,7 +76,7 @@ driver.quit()
 ### xz.aliyun
 
 | 2020/11/25 | rcoil      | 【知识回顾】Cobalt Strike 4.0 认证及修补过程                 | https://xz.aliyun.com/t/8557 |
-| ---------- |  | ------------------------------------------------------------ | ---------------------------- |
+| ---------- | ---------- | ------------------------------------------------------------ | ---------------------------- |
 | 2020/7/17  | uknow      | 利用ReflectiveDLL来武装你的Cobalt Strike                     | https://xz.aliyun.com/t/7997 |
 | 2020/7/17  | treebacker | Metasploit &  CobaltStrike 的shellcode分析                   | https://xz.aliyun.com/t/7996 |
 | 2020/4/3   | 利华       | cobaltstrike dns beacon知多少                                | https://xz.aliyun.com/t/7488 |

@@ -1,6 +1,11 @@
 # Security_Article
 scrapy website Article and link ...
 
+0x01 新建项目
+0x02 明确目标
+0x03 制作爬虫
+0x04 存储内容
+
 e.g.
 
 `pip3 install lxml,scrapy`
@@ -41,3 +46,24 @@ e.g.
 }
 ```
 ![](./images/seebug.png)
+
+### Selenium保存网页为mhtml方法
+
+https://www.cnblogs.com/superhin/p/12600358.html
+
+```
+from selenium import webdriver
+
+driver = webdriver.Chrome()
+driver.get('https://www.qq.com/')
+
+# 1. 执行 Chome 开发工具命令，得到mhtml内容
+res = driver.execute_cdp_cmd('Page.captureSnapshot', {})
+
+# 2. 写入文件
+with open('qq.mhtml', 'w') as f:
+    f.write(res['data'])
+
+driver.quit()
+```
+

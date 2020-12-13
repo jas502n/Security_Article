@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html xmlns:wb="http://open.weibo.com/wb">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta property="wb:webmaster" content="ccd3e79934f3322d"/>
+    <title>Paper</title>
+    <meta name="keywords" content="漏洞文档,漏洞分析,安全技术"/>
+    <meta name="description" content=""/>
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/static/vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/screen.css?t=20180530"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/font.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/plugin_comment.css"/>
+    <link rel="stylesheet"
+          href="//libs.baidu.com/fontawesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/prism.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/monokai.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/custom.css?t=20190614"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/print.css?t=20170821" media="print"/>
+    <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+</head>
+<body class="home-template">
+<div class="weixin-share-img" style="display: none">
+    <img src="/static/images/weixin-share.png" alt="Paper"/>
+</div>
+<div id="wrapper" class="">
+    <div id="sidebar">
+        <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+            <span class="hamb-top"></span>
+            <span class="hamb-middle"></span>
+            <span class="hamb-bottom"></span>
+        </button>
+        <div id="sidebar-content" class="inner">
+            <h2 class="blog-title">
+                <img src="https://www.seebug.org/static/dist2/images/seebug-logo2.png?v=2" alt="Seebug-logo">
+            </h2>
+            <h3 class="blog-description">Paper - 安全技术精粹</h3>
+            <form id="search" action="/">
+                <button type="submit"
+                        style="background: #13313f; border: #13313f; position: absolute; right: -4px; margin-top: -3px;">
+                    <i class="fa fa-search search-button" style="position: absolute;right:10px; margin-top:6px;"> </i>
+                </button>
+                <input id="search-field" name="keyword" value="" placeholder="Search"/>
+            </form>
+            <div class="overlay"></div>
+            <div id="sidebar-links">
+                <ul id="subscription-links">
+                    <li><a target="_blank" href="/rss/"><i class="fa fa-rss"></i>RSS 订阅</a>
+                    </li>
+                    <li><a href="/contribution/paper/"><i
+                            class="fa fa-envelope-o"></i>投稿</a></li>
+                    <li><a href="/rank/"><i
+                            class="glyphicon glyphicon-signal"></i>阅读榜</a></li>
+                </ul>
+                <ul id="navigation">
+                    <li class="nav-" role="presentation"><a href="/"><i
+                            class="fa fa-angle-right"></i>首页</a></li>
+                    <li class="nav-" role="presentation"><a href="/category/vul-analysis/"><i
+                            class="fa fa-angle-right"></i>漏洞分析</a></li>
+                    <li class="nav-" role="presentation"><a href="/category/tools/"><i
+                            class="fa fa-angle-right"></i>安全工具&amp;安全开发</a></li>
+                    <li class="nav-" role="presentation"><a href="/category/information/"><i
+                            class="fa fa-angle-right"></i>情报分析</a></li>
+                    <li class="nav-" role="presentation"><a href="/category/experience/"><i
+                            class="fa fa-angle-right"></i>经验心得</a></li>
+                    <li class="nav-" role="presentation"><a href="/category/web-security/"><i
+                            class="fa fa-angle-right"></i>Web安全</a></li>
+                    <li class="nav-" role="presentation"><a href="/category/bin-security/"><i
+                            class="fa fa-angle-right"></i>二进制安全</a></li>
+                    <li class="nav-" role="presentation"><a href="/category/mobile-security/"><i
+                            class="fa fa-angle-right"></i>移动安全</a></li>
+                    <li class="nav-" role="presentation"><a href="/category/prime/"><i
+                            class="fa fa-angle-right"></i>安全基础&amp;教学篇</a></li>
+                    <li class="nav-" role="presentation"><a href="/category/ctf/"><i
+                            class="fa fa-angle-right"></i>CTF</a></li>
+                    <li class="nav-" role="presentation"><a href="/category/IoT/"><i
+                            class="fa fa-angle-right"></i>IoT安全</a></li>
+                    <li class="nav-" role="presentation"><a href="/category/blockchain/"><i
+                            class="fa fa-angle-right"></i>区块链</a></li>
+                    <li class="nav-" role="presentation"><a href="/category/404team/"><i
+                            class="fa fa-angle-right"></i>404专栏</a></li>
+                    <li class="nav-" role="presentation"><a href="/category/report/"><i
+                            class="fa fa-angle-right"></i>专题报告</a></li>
+                    <li class="nav-" role="presentation"><a href="/category/404team-en/"><i
+                            class="fa fa-angle-right"></i>404 English Paper</a></li>
+                    <li class="nav-" role="presentation"><a href="/category/threat-intelligence/"><i
+                            class="fa fa-angle-right"></i>威胁情报</a></li>
+                    <li class="nav-" role="presentation"><a href="/call-for-paper/"><i
+                            class="fa fa-angle-right"></i>如何投稿</a></li>
+                    <li class="nav-" role="presentation"><a href="https://paper.seebug.org/papers/"><i
+                            class="fa fa-angle-right"></i>归档文件</a></li>
+                </ul>
+                <ul id="sidebar-external">
+                </ul>
+            </div>
+            <footer class="site-footer">
+                <section class="copyright">Copyright @ 404 Team from Knownsec.</section>
+            </footer>
+        </div>
+    </div>
+    <main>
+        <div class="main-inner">
+            <section id="results"></section>
+            <article class="post">
+                <header class="post-header">
+                    <h5 class="post-title"><a href="/1425/">黑客组织利用 njRAT 以 Pastebin 为切入点进行恶意软件攻击</a></h5>
+                    <section class="post-meta">
+          <span class="post-time">
+              <i class='fa fa-calendar'></i>
+              <time datetime="2020-12-11" class="timeago">2020年12月11日</time>
+              <time datetime="2020-12-11" class="fulldate">2020年12月11日</time>
+          </span>
+                        <br>
+                        <i class='fa fa-tag'></i>
+                        <a href="/category/threat-intelligence/">威胁情报</a>
+                    </section>
+                </header>
+                <section class="post-content">
+                    译者：知道创宇404实验室翻译组
+                    原文链接：https://unit42.paloaltonetworks.com/njrat-pastebin-command-and-control/
+                    概要
+                    ...
+                </section>
+            </article>
+            <article class="post">
+                <header class="post-header">
+                    <h5 class="post-title"><a href="/1424/">SharePoint Rce 系列分析（一）</a></h5>
+                    <section class="post-meta">
+          <span class="post-time">
+              <i class='fa fa-calendar'></i>
+              <time datetime="2020-12-10" class="timeago">2020年12月10日</time>
+              <time datetime="2020-12-10" class="fulldate">2020年12月10日</time>
+          </span>
+                        <br>
+                        <i class='fa fa-tag'></i>
+                        <a href="/category/vul-analysis/">漏洞分析</a>
+                    </section>
+                </header>
+                <section class="post-content">
+                    作者：青藤实验室
+                    原文链接：https://mp.weixin.qq.com/s/FfHc8TFUs_4H8JHWbYv3FQ
+                    得益于 @pwntester 和 @Oleksandr 在 bla...
+                </section>
+            </article>
+            <article class="post">
+                <header class="post-header">
+                    <h5 class="post-title"><a href="/1423/">用于分发恶意软件的 .NET 打包器使用嵌入式图像来隐藏有效负载</a></h5>
+                    <section class="post-meta">
+          <span class="post-time">
+              <i class='fa fa-calendar'></i>
+              <time datetime="2020-12-09" class="timeago">2020年12月09日</time>
+              <time datetime="2020-12-09" class="fulldate">2020年12月09日</time>
+          </span>
+                        <br>
+                        <i class='fa fa-tag'></i>
+                        <a href="/category/threat-intelligence/">威胁情报</a>
+                    </section>
+                </header>
+                <section class="post-content">
+                    译者：知道创宇404实验室翻译组
+                    原文链接：https://www.proofpoint.com/us/blog/threat-insight/commodity-net-packers-use...
+                </section>
+            </article>
+            <article class="post">
+                <header class="post-header">
+                    <h5 class="post-title"><a href="/1422/">Spring 全家桶各类 RCE 漏洞浅析</a></h5>
+                    <section class="post-meta">
+          <span class="post-time">
+              <i class='fa fa-calendar'></i>
+              <time datetime="2020-12-08" class="timeago">2020年12月08日</time>
+              <time datetime="2020-12-08" class="fulldate">2020年12月08日</time>
+          </span>
+                        <br>
+                        <i class='fa fa-tag'></i>
+                        <a href="/category/vul-analysis/">漏洞分析</a>
+                    </section>
+                </header>
+                <section class="post-content">
+                    作者： 深信服千里目安全实验室
+                    原文链接：https://mp.weixin.qq.com/s/gfCtSJoefYLjJpaksbKLrQ
+                    一、Spring全家桶简介
+                    Spring发展到现在，...
+                </section>
+            </article>
+            <article class="post">
+                <header class="post-header">
+                    <h5 class="post-title"><a href="/1421/">新的 npm 恶意软件带有 Bladabindi 木马</a></h5>
+                    <section class="post-meta">
+          <span class="post-time">
+              <i class='fa fa-calendar'></i>
+              <time datetime="2020-12-07" class="timeago">2020年12月07日</time>
+              <time datetime="2020-12-07" class="fulldate">2020年12月07日</time>
+          </span>
+                        <br>
+                        <i class='fa fa-tag'></i>
+                        <a href="/category/threat-intelligence/">威胁情报</a>
+                    </section>
+                </header>
+                <section class="post-content">
+                    译者：知道创宇404翻译组
+                    原文链接：https://blog.sonatype.com/bladabindi-njrat-rat-in-jdb.js-npm-malware
+                    在感恩节周末，我们...
+                </section>
+            </article>
+            <nav class="pagination" role="navigation">
+                <span class="page-number">Page 1 of 275</span>
+                <a class="older-posts" href="?page=2">Older Posts <span aria-hidden="true">&rarr;</span></a>
+            </nav>
+        </div>
+    </main>
+</div>
+<script src="https://static.geetest.com/static/tools/gt.js"/>
+<script type="text/javascript" src="/static/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/static/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/static/js/index.js"></script>
+<script type="text/javascript" src="/static/js/prism-loader.js"></script>
+<script type="text/javascript" src="/static/js/prism.js"></script>
+<script type="text/javascript" src="/static/js/jquery.ghostHunter.js"></script>
+<script type="text/javascript" src="/static/js/js.cookie.js"></script>
+<script type="text/javascript" src="/static/js/plugin_comment.js"></script>
+<script type="text/javascript" src="/static/js/custom.js?t=20180730"></script>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script>
+  wx.config({
+    'appId': 'wx46c209f251516b33',
+    'debug': 'False' !== 'False',
+    'nonceStr': 'EY8pwkrAyta8UtX',
+    'signature': '761a1ae70fb305fa867ab7f101cf71db974fd0c8',
+    'timestamp': '1607795482',
+    'jsApiList': [
+        'checkJsApi',
+        'onMenuShareTimeline',
+        'onMenuShareAppMessage',
+        'onMenuShareQQ',
+        'onMenuShareQZone',
+    ]
+  });
+
+</script>
+<script>
+  wx.ready(function () {
+    var title = '' || document.title;
+    var link = window.location.href;
+    var imgUrl = '' || 'https://paper.seebug.org' + '/static/images/weixin-share-seebug.jpg';
+    var desc = '' || 'Seebug Paper 安全技术精粹';
+    wx.onMenuShareTimeline({
+      title: title, // 分享标题
+      link: link, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+      imgUrl: imgUrl, // 分享图标
+      success: function () {
+        // 用户确认分享后执行的回调函数
+      },
+      cancel: function () {
+        // 用户取消分享后执行的回调函数
+      }
+    });
+    wx.onMenuShareAppMessage({
+      title: title, // 分享标题
+      desc: desc, // 分享描述
+      link: link, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+      imgUrl: imgUrl, // 分享图标
+      type: '', // 分享类型,music、video或link，不填默认为link
+      dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+      success: function () {
+        // 用户确认分享后执行的回调函数
+      },
+      cancel: function () {
+        // 用户取消分享后执行的回调函数
+      }
+    });
+    wx.onMenuShareQQ({
+      title: title, // 分享标题
+      desc: desc, // 分享描述
+      link: link, // 分享链接
+      imgUrl: imgUrl, // 分享图标
+      success: function () {
+        // 用户确认分享后执行的回调函数
+      },
+      cancel: function () {
+        // 用户取消分享后执行的回调函数
+      }
+    });
+    wx.onMenuShareQZone({
+      title: title, // 分享标题
+      desc: desc, // 分享描述
+      link: link, // 分享链接
+      imgUrl: imgUrl, // 分享图标
+      success: function () {
+        // 用户确认分享后执行的回调函数
+      },
+      cancel: function () {
+        // 用户取消分享后执行的回调函数
+      }
+    });
+  })
+
+</script>
+</body>
+</html>
